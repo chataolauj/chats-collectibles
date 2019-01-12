@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/ITIS4166_FinalProject">
+    <Resource 
+        auth="Container" 
+        driverClassName="com.mysql.jdbc.Driver" 
+        logAbandoned="true" maxActive="100" maxIdle="30" maxWait="10000" 
+        name="jdbc/chats_collectibles" 
+        password="9476*4177Cl" 
+        removeAbandoned="true" 
+        removeAbandonedTimeout="60" 
+        type="javax.sql.DataSource" 
+        url="jdbc:mysql://localhost:3306/chats_collectibles" 
+        username="chats_collectibles"/>
+    
+    <!-- <Realm 
+      className="org.apache.catalina.realm.JDBCRealm" 
+      connectionName="chats_collectibles" 
+      connectionPassword="9476*4177Cl" 
+      connectionURL="jdbc:mysql://localhost:3306/chats_collectibles" debug="99" 
+      driverName="com.mysql.jdbc.Driver" 
+      roleNameCol="Rolename" userCredCol="Password" userNameCol="Username" 
+      userRoleTable="UserRole" userTable="UserPass"/> -->
+    
+    <Realm 
+      className="org.apache.catalina.realm.DataSourceRealm"  debug="99" 
+      dataSourceName="jdbc/chats_collectibles" 
+      localDataSource="true"
+      roleNameCol="Rolename" userCredCol="Password" userNameCol="Username" 
+      userRoleTable="UserRole" userTable="UserPass"/>
+</Context>
