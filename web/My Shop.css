@@ -1,0 +1,93 @@
+/* html formatting */
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+    background-color: darkslategray;
+    color: antiquewhite;
+    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+}
+
+.header-nav {
+    background-color: peachpuff;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.catalog-mtg {
+    width: 10rem;
+}
+
+.catalog-mtg img {
+    width: 223px;
+    height: 311px;
+}
+
+.item-description {
+    padding: 10px 0px 10px 0px;
+}
+
+.item-img p{
+    color: limegreen;
+    padding-top: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.item-img img {
+    width: 101%;
+}
+
+.form-submit {
+     background: none !important;
+     border: none !important;
+     color: #0066ff;
+     text-decoration: underline;
+     cursor: pointer; 
+}
+
+.login-form input[type="text"], [type="password"], [type="email"]{
+    width: 50%;
+}
+
+.cart-form {
+    float: right;
+}
+
+.cart-form input{
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+.cart-billing p {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: darkslategray;
+    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+footer p {
+    color: antiquewhite;
+    text-align: center;
+    margin: 15px;
+}
